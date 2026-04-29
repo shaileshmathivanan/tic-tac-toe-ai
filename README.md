@@ -93,16 +93,49 @@ The system also provides **real-time comparison** between two algorithms:
 
 ---
 
-## 📸 Screenshots
+## 🧪 Sample Gameplay
 
-### 🎯 Game Interface
+### Example Game Flow
 
-![Game UI](screenshots/game.png)
+- Player chooses: X  
+- AI chooses: O  
 
-### 📊 Algorithm Comparison
+Move sequence:
+- Player → Position 0  
+- AI → Position 4 (optimal center move)  
+- Player → Position 8  
+- AI → Blocks winning path  
 
-![Stats](screenshots/stats.png)
+### Result:
+Draw (Optimal play from both sides)
 
+### Performance:
+- Minimax: High node exploration  
+- Alpha-Beta: Reduced nodes (~95% less)  
+- Faster decision making with same result
+
+---
+## 📊 Key Observations
+
+- Alpha-Beta Pruning significantly reduces the number of nodes explored  
+- Both algorithms always return the same optimal move  
+- Alpha-Beta is faster due to pruning of unnecessary branches  
+- Minimax explores the complete game tree  
+- The AI ensures either a win or a draw (never loses)  
+---
+## 🎮 Demo Walkthrough
+
+1. Open the application in your browser  
+2. Choose your symbol (X or O)  
+3. Click on any cell to make your move  
+4. The AI instantly responds with the optimal move  
+5. View real-time comparison:
+   - Nodes explored
+   - Execution time
+   - Algorithm used  
+6. Continue playing until win, loss, or draw  
+
+The AI guarantees optimal gameplay, making it impossible to defeat.
 ---
 
 ## 🚀 Execution Steps
